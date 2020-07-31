@@ -1,9 +1,7 @@
 #include <Wire.h>
 #include <BH1750.h>
 
-//BH1750 lightMeter;
-
-BH1750 lightMeter(0x5c);
+BH1750 lightMeter;
 
 void setup(){
   Serial.begin(9600);
