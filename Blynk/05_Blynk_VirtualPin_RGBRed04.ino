@@ -25,7 +25,8 @@ void loop()
   analogWrite(D7, b);
 }
 
-BLYNK_WRITE(V8){
+BLYNK_WRITE(V8)
+{
   r = param[0].asInt();
   g = param[1].asInt();
   b = param[2].asInt();
