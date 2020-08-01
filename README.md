@@ -1,5 +1,7 @@
 # NodeMCU
-NodeMCU example codes  (2020.08.05 ~ 2020.08.07)<br>
+Example codes of IoT Sensors on NodeMCU <br>
+(2020.08.05 ~ 2020.08.07)<br>
+By Joy<br>
 <br><br>
 /Basic<br>
   01_LedBlink.ino<br>
