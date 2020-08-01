@@ -25,8 +25,8 @@ By Joy H. Kang<br>
   02_UART_comm_ARDUINO.ino<br>
   03_UART_comm_NodeMCU.ino<br>
   04_I2C_ScanAddress.ino<br>
-  05_I2C_BH1750_Light.ino<br>
-  06_I2C_BH1750_Light02.ino<br>
+  05_I2C_BH1750_Illuminometer.ino<br>
+  06_I2C_BH1750_Illuminometer02.ino<br>
   07_I2C_LIS3DH_Accelerometer.ino<br>
   08_I2C_LIS3DH_Accelerometer02.ino<br>
   09_I2C_APDS9960_RGBColor.ino<br>
