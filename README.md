@@ -8,8 +8,8 @@ By Joy H. Kang<br>
   02_LedBlink02.ino<br>
   03_Led_Button.ino<br>
   04_Led_Button02.ino<br>
-  05_PotentioMeter.ino<br>
-  06_PotentioMeter02.ino<br>
+  05_Potentiometer.ino<br>
+  06_Potentiometer02.ino<br>
   07_CDS_Light.ino<br>
   08_CDS_Light02.ino<br>
   09_LedPWM.ino<br>
