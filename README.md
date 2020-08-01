@@ -50,7 +50,7 @@ NodeMCU example codes  (2020.08.05 ~ 2020.08.07)<br>
 	02_Blynk_VirtualPin_RGBLed.ino<br>
 	03_Blynk_VirtualPin_RGBLed02.ino<br>
 	04_Blynk_VirtualPin_RGBLed03.ino<br>
-	05_Blynk_VirtualPin_RGBRed04.ino<br>
+	05_Blynk_VirtualPin_RGBLed04.ino<br>
 	06_Blynk_VirtualPin_IR_distance.ino<br>
 	07_Blynk_VirtualPin_IR_distance02.ino<br>
 	08_Blynk_VirtualPin_Button_Monitor.ino<br>
