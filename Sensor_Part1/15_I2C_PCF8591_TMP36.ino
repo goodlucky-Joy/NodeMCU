@@ -20,6 +20,6 @@ void loop() {
 
   voltage = signalLevel * 3.3/256.0;
   temperature = 100*voltage-50;
-  Serial.println( voltage );
+  Serial.println( temperature );
   delay(1000);
 }
