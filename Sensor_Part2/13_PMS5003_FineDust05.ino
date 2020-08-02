@@ -18,9 +18,9 @@ int PM10Value=0;          //미세먼지      //define PM10 value of the air det
 
  //Adafruit_SSD1306 display(OLED_RESET);
  Adafruit_SSD1306 display(128,64,&Wire,OLED_RESET);
-char auth[] = "mWxNVRtzRA6cwKIF69e0G_rdQhkWvagR";
-char ssid[] = "Riatech2GA";
-char pass[] = "12345678";
+char auth[] = "";
+char ssid[] = "";
+char pass[] = "";
 
 WiFiServer server(80);
 void setup()
