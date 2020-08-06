@@ -1,30 +1,43 @@
-//#include<ESP8266WiFi.h>
-//#include<BlynkSimpleEsp8266.h>
+#include "DHT.h"
+#define DHTPIN 2     // D4, GPIO2 Digital pin connected to the DHT sensor
 
-#include<Wire.h>
-#include<BH1750.h>
-BH1750 lightMeter;
+#define DHTTYPE DHT11   // DHT 11
+//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 
-char auth[]="";
-char ssid[]="";
-char pass[]="";
+#define BLYNK_PRINT Serial
 
-void setup(){
+#include <ESP8266WiFi.h>
+#include <BlynkSimpleEsp8266.h>
+
+char auth[] = "YourAuthToken";
+char ssid[] = "YourSSID";
+char pass[] = "YourPW";
+
+DHT dht(DHTPIN, DHTTYPE);
+float h;
+
+void setup()
+{
   Serial.begin(9600);
-  Wire.begin();
-  lightMeter.begin(BH1750::ONE_TIME_HIGH_RES_MODE,0x5C);
-//  Blynk.begin(auth,ssid,pass);
+  Blynk.begin(auth, ssid, pass);
+  dht.begin();
 }
-
 
 void loop()
 {
-  float lux=lightMeter.readLightLevel();
-  Serial.print("Light: ");
-  Serial.print(lux);
-  Serial.println(" lx");
-//  Blynk.virtualWrite(V2,lux);
-  delay(1000);
-//  Blynk.run();
+  Blynk.run();
+
+  delay(2000);
+
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  h = dht.readHumidity();
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.println("%");
   
+}
+
+BLYNK_READ(V4){
+  Blynk.virtualWrite(4, h);
 }
