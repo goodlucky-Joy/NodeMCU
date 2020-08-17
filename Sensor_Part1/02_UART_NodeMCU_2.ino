@@ -16,9 +16,9 @@ void loop(){
   Serial.println(swState);
   
   if(swState ==LOW){
-    NodeMCU_S.write('0');
+    NodeMCU_S.write(0);
   }else {
-    NodeMCU_S.write('1');
+    NodeMCU_S.write(1);
   }
   
   if( NodeMCU_S.available() > 0 ){
