@@ -15,11 +15,11 @@ void loop(){
 
     read_data = Arduino_S.read();
     
-    if(read_data == '0'){
+    if(read_data == 0){
       write_data = 100;
       Arduino_S.write(write_data);
     }
-    if(read_data == '1'){
+    if(read_data == 1){
       write_data = 50; 
       Arduino_S.write(write_data);
        
