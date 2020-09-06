@@ -1,7 +1,7 @@
 # NodeMCU
 Example codes of IoT Sensors on NodeMCU <br>
 (2020.08.05 ~ 2020.08.07)<br>
-By Joy H. Kang<br>
+By H.J. Kang<br>
 <br><br>
 /Basic<br>
 	01_LedBlink.ino<br>
